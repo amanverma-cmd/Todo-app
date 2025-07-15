@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     addtaskbtn.addEventListener("click", (e) => {
-        e.preventDefault();  // ✅ Stop form submission that causes page reload
+        e.preventDefault();
         addTask();
     });
     taskInput.addEventListener("keypress", (e) => {
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    loadTaskFromLocal(); // ← ✅ Add this line to load saved tasks on page load
+    loadTaskFromLocal();
 });
 
 
